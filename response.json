@@ -1,0 +1,90 @@
+{
+    "exercise":{
+    "questionsCount": 5,
+    "exercises": [
+        {
+            "category": "Questions with Images",
+            "categorySorting": 0,
+            "speakingTests": [
+                {
+                    "id": "f655b6f1-f062-454f-856f-e8fdae372297",
+                    "questionsCount": 2,
+                    "isPaid": "false",
+                    "exerciseName": "Describe the image",
+                    "type": "Exercise"
+                },
+                {
+                    "id": "63d97bb2-5678-47a2-8ebc-b1f84b27e5d4",
+                    "category": "Questions with Images",
+                    "categorySorting": 0,
+                    "questionsCount": 1,
+                    "isPaid": "false",
+                    "exerciseName": "2 Choice",
+                    "type": "Exercise"
+                }
+            ]
+        },
+        {
+            "category": "Starting with question words",
+            "categorySorting": 1,
+            "speakingTests": [
+                {
+                    "id": "2bc87dc9-5390-48d2-84c0-2b5ea2b80162",
+                    "questionsCount": 1,
+                    "isPaid": "false",
+                    "exerciseName": "Waar?",
+                    "type": "Exercise"
+                },
+                {
+                    "id": "ad21055d-cf5e-422d-a65e-81c4a95e19ef",
+                    "category": "Starting with question words",
+                    "categorySorting": 1,
+                    "questionsCount": 1,
+                    "isPaid": "false",
+                    "exerciseName": "Hoe?",
+                    "type": "Exercise"
+                }
+            ]
+        }
+    ]
+}
+
+
+,"question":{
+    "exercises": [
+        {
+            "id": "3f5e6814-be38-4ffe-9865-6dd8bafc37d1",
+            "questionData": {
+                "answerSound": "",
+                "images": [],
+                "imageURLs": [
+                    "https://langtools-app-content-gamma-eu-west-3.s3.amazonaws.com/images/describe-1-a.png",
+                    "https://langtools-app-content-gamma-eu-west-3.s3.amazonaws.com/images/describe-1-b.png"
+                ],
+                "questionSound": "2TEkgPAAAGkAAAAIAAANIAAAAS",
+                "questionText": "Janine is in de keuken. Kijk naar alle plaatjes. Vertel wat Janine doet. Vertel iets over alle plaatjes.",
+                "suggestedAnswer": "Janine staat in de keuken en laat een whiteboard zien. Ze toont ook een stuk taart."
+            },
+            "questionType": "Choice",
+            "type": "Question"
+        },
+        {
+            "id": "3f5e6814-be38-4ffe-9865-6dd8bafc37d2",
+            "questionData": {
+                "answerSound": "2TEkgPAAAGkAAAAIAAANIAAAAS",
+                "images": [],
+                "imageURLs": [
+                    "https://langtools-app-content-gamma-eu-west-3.s3.amazonaws.com/images/describe-2-a.png",
+                    "https://langtools-app-content-gamma-eu-west-3.s3.amazonaws.com/images/describe-2-b.png"
+                ],
+                "questionSound": "2TEkgPAAAGkAAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqo=",
+                "questionText": "Maria werkt als stewardess. Kijk naar alle plaatjes. Vertel wat Maria doet. Vertel iets over alle plaatjes.",
+                "suggestedAnswer": "Maria begroet een passagier hartelijk en serveert eten aan de klant."
+            },
+            "questionType": "Choice",
+            "type": "Question"
+        }
+    ]
+}
+
+}

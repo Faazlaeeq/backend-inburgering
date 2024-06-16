@@ -1,0 +1,13 @@
+
+
+npm install express mongoose multer
+
+npm install cors
+
+npm install
+
+npm i multer
+
+npm install express mongoose
+
+npm install express mongoose
