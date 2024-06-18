@@ -53,7 +53,6 @@ app.use('/api', ExcercisesRoute);
 app.use('/api', answerRoute);
 app.use('/api', QuestionRoute);
 
-
 //Handle 404 errors
 
 app.use((req, res, next) => {
