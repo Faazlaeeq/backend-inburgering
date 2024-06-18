@@ -1,10 +1,12 @@
 const router = require('express').Router();
 
 router.get('/listQuestions', (req, res) => {
-    res.json({
+    const data = {
         "exercises": [
             {
                 "id": "3f5e6814-be38-4ffe-9865-6dd8bafc37d1",
+                "excerciseID": "f655b6f1-f062-454f-856f-e8fdae372297",
+
                 "questionData": {
                     "answerSound": "",
                     "images": [],
@@ -21,6 +23,8 @@ router.get('/listQuestions', (req, res) => {
             },
             {
                 "id": "3f5e6814-be38-4ffe-9865-6dd8bafc37d2",
+                "excerciseID": "f655b6f1-f062-454f-856f-e8fdae372297",
+
                 "questionData": {
                     "answerSound": "2TEkgPAAAGkAAAAIAAANIAAAAS",
                     "images": [],
@@ -36,6 +40,9 @@ router.get('/listQuestions', (req, res) => {
                 "type": "Question"
             }
         ]
-    });
+    };
+    const exerciseId = req.query.exerciseId;
+    const questions = data.exercises.filter(exercise => exercise.excerciseID === exerciseId);
+    res.json(questions);
 });
 module.exports = router;
