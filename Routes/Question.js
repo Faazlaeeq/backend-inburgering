@@ -41,7 +41,7 @@ router.get('/listQuestions', (req, res) => {
             }
         ]
     };
-    const exerciseId = req.query.exerciseID;
+    const exerciseId = req.query.excerciseID;
     const questions = data.exercises.filter(exercise => exercise.excerciseID === exerciseId);
     res.json(questions);
 });
