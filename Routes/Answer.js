@@ -60,9 +60,9 @@ router.post('/transcribe', async (req, res) => {
     //     console.error(`Error transcribing audio: ${error}`);
     //     res.status(500).send('Error transcribing audio');
     // }
-    // // res.json({
-    // //     transcript: "Mun say supari nikal kar baat kar",
-    // // });
+    res.json({
+        transcript: "Mun say supari nikal kar baat kar",
+    });
 })
 
 module.exports = router;
