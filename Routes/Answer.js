@@ -37,32 +37,32 @@ router.post('/transcribe', async (req, res) => {
     const audioBytes = Buffer.from(audio, 'base64');
 
     // The audio file's encoding, sample rate in hertz, and BCP-47 language code
-    const audioConfig = {
-        audioChannelCount: 2,
-        enableSeparateRecognitionPerChannel: true,
-        languageCode: 'nl-NL', // Dutch language code
-    };
-    const request = {
-        audio: {
-            content: audioBytes.toString('base64'),
-        },
-        config: audioConfig,
-    };
+    // const audioConfig = {
+    //     audioChannelCount: 2,
+    //     enableSeparateRecognitionPerChannel: true,
+    //     languageCode: 'nl-NL', // Dutch language code
+    // };
+    // const request = {
+    //     audio: {
+    //         content: audioBytes.toString('base64'),
+    //     },
+    //     config: audioConfig,
+    // };
 
-    try {
-        const [response] = await client.recognize(request);
-        const transcription = response.results
-            .map(result => result.alternatives[0].transcript)
-            .join('\n');
-        console.log(`Transcription: ${transcription}`);
-        res.json({ transcript: transcription });
-    } catch (error) {
-        console.error(`Error transcribing audio: ${error}`);
-        res.status(500).send('Error transcribing audio');
-    }
-    // res.json({
-    //     transcript: "Mun say supari nikal kar baat kar",
-    // });
+    // try {
+    //     const [response] = await client.recognize(request);
+    //     const transcription = response.results
+    //         .map(result => result.alternatives[0].transcript)
+    //         .join('\n');
+    //     console.log(`Transcription: ${transcription}`);
+    //     res.json({ transcript: transcription });
+    // } catch (error) {
+    //     console.error(`Error transcribing audio: ${error}`);
+    //     res.status(500).send('Error transcribing audio');
+    // }
+    // // res.json({
+    // //     transcript: "Mun say supari nikal kar baat kar",
+    // // });
 })
 
 module.exports = router;
