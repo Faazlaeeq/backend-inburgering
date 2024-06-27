@@ -34,7 +34,7 @@ router.post('/transcribe', async (req, res) => {
         userID
     } = req.body;
 
-    const audioBytes = Buffer.from(audio, 'base64');
+    // const audioBytes = Buffer.from(audio, 'base64');
 
     // The audio file's encoding, sample rate in hertz, and BCP-47 language code
     // const audioConfig = {
