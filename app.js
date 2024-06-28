@@ -15,6 +15,7 @@ const app = express();
 
 //set up middleware
 app.use(bodyParse.json({ limit: '50mb' }));
+app.use(bodyParse.urlencoded({ limit: '100mb', extended: true }));
 
 app.use(cors());
 
